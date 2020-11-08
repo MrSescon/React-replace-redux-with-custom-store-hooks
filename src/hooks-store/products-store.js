@@ -10,11 +10,11 @@ const configureStore = () => {
         ...curState.products[prodIndex],
         isFavorite: newFavStatus
       };
-      return {products: updatedProducts};
+      return { products: updatedProducts };
     }
   };
   initStore(actions, {
-    products:[
+    products: [
       {
         id: 'p1',
         title: 'Red Scarf',
@@ -41,6 +41,6 @@ const configureStore = () => {
       }
     ]
   });
-}
+};
 
 export default configureStore;
